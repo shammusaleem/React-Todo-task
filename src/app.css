@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.todo-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f6d18; /* Dark green */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .input-box, .add-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%; /* Adjust based on the container width */
+  gap: 10px; /* Space between the inputs and the button */
+}
+
+.input-box {
+  flex: 1; /* This ensures that the input boxes take up equal space */
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: 1px solid #5fe735; /* Light green border */
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #1f6d18; /* Dark green */
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.todo-card {
+  background-color: #a5daac; /* Light green background for the todo card */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 250px; /* Fixed width */
+}
+
+.completed {
+  background: #4CAF50; /* Green background for completed tasks */
+  border-left: 5px solid #1f6d18; /* Dark green border for completed */
+}
+
+.not-completed {
+  background: #FF6961; /* Light red background for not completed tasks */
+  border-left: 5px solid #a94442; /* Darker red border for not completed */
+}
+
+.todo-edit-form input, .todo-edit-form select {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.todo-display p {
+  margin: 5px 0;
+}
+
+.status-completed {
+  color: white;
+  background-color: #4CAF50; /* Green for completed status */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status-not-completed {
+  color: white;
+  background-color: #FF6961; /* Light red for not completed status */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.todo-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-edit button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #65ec87; /* Lighter green for edit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-delete button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #f1a22c; /* Orange for delete button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
